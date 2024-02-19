@@ -10,6 +10,7 @@ import page.RegistrationPage;
 
 import java.util.Map;
 
+import static com.codeborne.selenide.Selenide.executeJavaScript;
 import static com.codeborne.selenide.logevents.SelenideLogger.step;
 
 public class RegistrationFormTests {
@@ -50,6 +51,8 @@ public class RegistrationFormTests {
     void minimalRegistrationTest() {
         step("Открытие формы регистрации",()->{
             registrationPage.openPage();
+            executeJavaScript("$('#fixedban').remove()");
+            executeJavaScript("$('footer').remove()");
         });
         step("Заполнение полей",()->{
             registrationPage.setFirstName("Тест")
