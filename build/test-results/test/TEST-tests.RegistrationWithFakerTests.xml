@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="tests.RegistrationWithFakerTests" tests="1" skipped="0" failures="0" errors="0" timestamp="2024-02-12T06:15:20" hostname="WGD02RTI2669" time="8.758">
+  <properties/>
+  <testcase name="minimalRegistrationTest()" classname="tests.RegistrationWithFakerTests" time="8.758"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[SLF4J: No SLF4J providers were found.
+SLF4J: Defaulting to no-operation (NOP) logger implementation
+SLF4J: See https://www.slf4j.org/codes.html#noProviders for further details.
+февр. 12, 2024 9:15:24 AM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+WARNING: Unable to find an exact match for CDP version 121, returning the closest version; found: 120; Please update to a Selenium version that supports CDP version 121
+]]></system-err>
+</testsuite>

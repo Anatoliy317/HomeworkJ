@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="tests.RegistrationFormTests" tests="1" skipped="0" failures="1" errors="0" timestamp="2024-02-19T20:28:55" hostname="WGD02RTI2669" time="9.817">
+  <properties/>
+  <testcase name="minimalRegistrationTest()" classname="tests.RegistrationFormTests" time="9.817">
+    <failure message="Element should have text &quot;Тест Тестович&quot; {.table-responsive table/by text: Student Name/By.xpath: ..}&#13;&#10;Element: '&lt;tr&gt;Student Name Тест Тестов&lt;/tr&gt;'&#13;&#10;Actual value: text=&quot;Student Name Тест Тестов&quot;&#13;&#10;Screenshot: file:/C:/Users/anatoliy.aleshin/IdeaProjects/demoqa-homework-2/build/reports/tests/1708374545202.0.png&#13;&#10;Page source: file:/C:/Users/anatoliy.aleshin/IdeaProjects/demoqa-homework-2/build/reports/tests/1708374545202.0.html&#13;&#10;Timeout: 4 s." type="com.codeborne.selenide.ex.ElementShould">Element should have text &quot;Тест Тестович&quot; {.table-responsive table/by text: Student Name/By.xpath: ..}
+Element: '&lt;tr&gt;Student Name Тест Тестов&lt;/tr&gt;'
+Actual value: text=&quot;Student Name Тест Тестов&quot;
+Screenshot: file:/C:/Users/anatoliy.aleshin/IdeaProjects/demoqa-homework-2/build/reports/tests/1708374545202.0.png
+Page source: file:/C:/Users/anatoliy.aleshin/IdeaProjects/demoqa-homework-2/build/reports/tests/1708374545202.0.html
+Timeout: 4 s.
+	at app//com.codeborne.selenide.impl.WebElementSource.handleError(WebElementSource.java:149)
+	at app//com.codeborne.selenide.impl.WebElementSource.checkConditionAndReturnElement(WebElementSource.java:127)
+	at app//com.codeborne.selenide.impl.WebElementSource.checkCondition(WebElementSource.java:104)
+	at app//com.codeborne.selenide.commands.Should.execute(Should.java:30)
+	at app//com.codeborne.selenide.commands.Should.execute(Should.java:14)
+	at app//com.codeborne.selenide.commands.Commands.execute(Commands.java:165)
+	at app//com.codeborne.selenide.impl.SelenideElementProxy.dispatchAndRetry(SelenideElementProxy.java:132)
+	at app//com.codeborne.selenide.impl.SelenideElementProxy.invoke(SelenideElementProxy.java:84)
+	at app/jdk.proxy3/jdk.proxy3.$Proxy14.shouldHave(Unknown Source)
+	at app//page.components.ModalWindowComponent.checkSubmitForm(ModalWindowComponent.java:11)
+	at app//page.RegistrationPage.checkSubmitResult(RegistrationPage.java:108)
+	at app//tests.RegistrationFormTests.minimalRegistrationTest(RegistrationFormTests.java:20)
+	at java.base@17.0.9/java.lang.reflect.Method.invoke(Method.java:568)
+	at java.base@17.0.9/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at java.base@17.0.9/java.util.ArrayList.forEach(ArrayList.java:1511)
+</failure>
+  </testcase>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[[Test worker] INFO com.codeborne.selenide.impl.WebDriverThreadLocalContainer - No webdriver is bound to current thread: 1 - let's create a new webdriver
+[Test worker] INFO com.codeborne.selenide.impl.FileHelper - Creating folder: C:\Users\anatoliy.aleshin\IdeaProjects\demoqa-homework-2\build\downloads\1708374535695_19072_1
+[Test worker] INFO com.codeborne.selenide.webdriver.SelenideNettyClientFactory - Changed readTimeout from PT3M to PT1M30S
+[Test worker] INFO com.codeborne.selenide.webdriver.SelenideNettyClientFactory - Changed readTimeout from PT3M to PT1M30S
+февр. 19, 2024 11:28:59 PM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+WARNING: Unable to find an exact match for CDP version 121, so returning the closest version found: 117
+[Test worker] INFO com.codeborne.selenide.webdriver.WebDriverFactory - BrowserName=chrome Version=121.0.6167.184 Platform=windows
+[Test worker] INFO com.codeborne.selenide.webdriver.WebDriverFactory - Selenide v. 6.19.1
+[Test worker] INFO com.codeborne.selenide.webdriver.WebDriverFactory - Selenium WebDriver v. 4.13.0 build revision: ba948ece5b*
+[Test worker] INFO com.codeborne.selenide.drivercommands.CreateDriverCommand - Created webdriver in thread 1: ChromeDriver -> ChromeDriver: chrome on windows (f5625a0e72938d278dca82f0e9490395)
+[Test worker] INFO com.codeborne.selenide.drivercommands.DisposablesRegistry - Register WebDriverInstance[config=StaticConfig,webDriver=ChromeDriver: chrome on windows (f5625a0e72938d278dca82f0e9490395),proxy=null,downloadsFolder=C:\Users\anatoliy.aleshin\IdeaProjects\demoqa-homework-2\build\downloads\1708374535695_19072_1] in 1 [size=1]
+[Test worker] INFO com.codeborne.selenide.drivercommands.DisposablesRegistry - Add shutdown hook in 1 [size=1]
+[Test worker] INFO com.codeborne.selenide.impl.WebDriverThreadLocalContainer - Browser will stay open due to holdBrowserOpen=true: 1 -> ChromeDriver: chrome on windows (f5625a0e72938d278dca82f0e9490395)
+]]></system-err>
+</testsuite>
