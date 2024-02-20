@@ -11,11 +11,10 @@ import page.RegistrationPage;
 
 import java.util.Map;
 
-import static com.codeborne.selenide.Condition.text;
 import static com.codeborne.selenide.Selectors.byText;
 import static com.codeborne.selenide.Selenide.$;
 import static com.codeborne.selenide.Selenide.executeJavaScript;
-import static com.codeborne.selenide.logevents.SelenideLogger.step;
+import static io.qameta.allure.Allure.step;
 
 public class RegistrationFormTests {
 
@@ -59,6 +58,8 @@ public class RegistrationFormTests {
             if (bannerRoot.isDisplayed()) {
                 bannerRoot.$(byText("Consent")).click();
             }
+            executeJavaScript("$('#fixedban').remove()");
+            executeJavaScript("$('footer').remove()");
         });
         step("Заполнение полей",()->{
             registrationPage.setFirstName("Тест")
@@ -80,6 +81,12 @@ public class RegistrationFormTests {
     void registration() {
         step("Открытие формы регистрации",()->{
             registrationPage.openPage();
+            SelenideElement bannerRoot = $(".fc-consent-root");
+            if (bannerRoot.isDisplayed()) {
+                bannerRoot.$(byText("Consent")).click();
+            }
+            executeJavaScript("$('#fixedban').remove()");
+            executeJavaScript("$('footer').remove()");
         });
         step("Заполнение полей",()->{
             registrationPage.setFirstName("Ivan")
@@ -116,6 +123,12 @@ public class RegistrationFormTests {
     void negativeTest() {
         step("Открытие формы регистрации",()->{
             registrationPage.openPage();
+            SelenideElement bannerRoot = $(".fc-consent-root");
+            if (bannerRoot.isDisplayed()) {
+                bannerRoot.$(byText("Consent")).click();
+            }
+            executeJavaScript("$('#fixedban').remove()");
+            executeJavaScript("$('footer').remove()");
         });
         step("Заполнение полей",()->{
             registrationPage.setGender("Other")
