@@ -65,13 +65,13 @@ public class RegistrationFormTests {
             registrationPage.setFirstName("Тест")
                     .setLastName("Тестов")
                     .setGender("Other")
-                    .setNumber("89012345678");
+                    .setNumber("8901234567");
         });
         step("Проверка",()->{
             registrationPage.submit()
                     .checkSubmitResult("Student Name", "Тест Тестов")
                     .checkSubmitResult("Gender", "Other")
-                    .checkSubmitResult("Mobile", "89012345678");
+                    .checkSubmitResult("Mobile", "8901234567");
         });
     }
 
