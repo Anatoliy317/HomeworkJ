@@ -69,7 +69,7 @@ public class RegistrationFormTests {
         });
         step("Проверка",()->{
             registrationPage.submit()
-                    .checkSubmitResult("Student Name", "Тест Тестович")
+                    .checkSubmitResult("Student Name", "Тест Тестов")
                     .checkSubmitResult("Gender", "Other")
                     .checkSubmitResult("Mobile", "89012345678");
         });
